@@ -7,9 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
     return 'Hello, World App!'
-@app.route('/sec')
-def sec():
-    return 'Hello second page of app 1!'
+
 
 # Run the Flask application if this file is executed directly
 if __name__ == '__main__':
