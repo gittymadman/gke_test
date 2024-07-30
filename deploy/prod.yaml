@@ -7,5 +7,5 @@ metadata:
 description: prod
 requireApproval: true
 gke:
-  cluster: projects/omega-terrain-430406-s9/locations/us-central1-c/clusters/cluster-2
+  cluster: projects/My Project 67259/locations/us-central1-c/clusters/cluster-2
 

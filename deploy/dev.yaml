@@ -6,5 +6,5 @@ metadata:
   labels: {}
 description: dev
 gke:
-  cluster: projects/omega-terrain-430406-s9/locations/us-central1-c/clusters/cluster-1
+  cluster: projects/My Project 67259/locations/us-central1-c/clusters/cluster-1
 
