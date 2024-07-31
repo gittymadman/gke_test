@@ -2,9 +2,19 @@ apiVersion: deploy.cloud.google.com/v1
 kind: Target
 metadata:
   name: dev
-  annotations: {}
-  labels: {}
 description: dev
 gke:
   cluster: projects/My Project 67259/locations/us-central1-c/clusters/cluster-1
-
+executionConfigs:
+- usages:
+  - RENDER
+  - DEPLOY
+  - VERIFY
+  - PREDEPLOY
+  - POSTDEPLOY
+  defaultPool:
+    serviceAccount: new-service@omega-terrain-430406-s9.iam.gserviceaccount.com
+    artifactStorage: gs://us-central1.deploy-artifacts.omega-terrain-430406-s9.appspot.com
+  serviceAccount: new-service@omega-terrain-430406-s9.iam.gserviceaccount.com
+  artifactStorage: gs://us-central1.deploy-artifacts.omega-terrain-430406-s9.appspot.com
+  executionTimeout: 3600s
